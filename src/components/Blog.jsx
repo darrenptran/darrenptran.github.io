@@ -7,20 +7,27 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Stop Binge-Watching! Extract, Summarize, and Learn from YouTube Playlists with this Powerful Tool",
+      author: "Darren Tran",
+      date: "February 9, 2024",
+      summary: "Using a Python script to save you countless hours of watching Youtube tutorials."
+    },
+    {
+      id: 2,
       title: "Linux Workstation",
       author: "Darren Tran",
       date: "September 13, 2024",
       summary: "My current Linux setup and why I chose Debian as my distribution."
     },
     {
-      id: 2,
+      id: 3,
       title: "Designing Scalable and Resilient Architectures with AWS",
       author: "Darren Tran",
       date: "August 3, 2024",
       summary: "Explore key AWS services and design patterns to build highly available and scalable systems on the cloud."
     },
     {
-      id: 3,
+      id: 4,
       title: "Enhancing Network Security: Advanced Concepts and Best Practices",
       author: "Darren Tran",
       date: "July 1, 2024",
