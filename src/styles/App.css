@@ -1,0 +1,195 @@
+/* Base Styling */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Code Retina", monospace; /* Sets a consistent font family for headings and body text */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  color: #000000; /* Sets text color to black for better readability */
+  line-height: 1.6; /* Increases line height for better readability */
+  background-color: #ffffff; /* Sets a white background color for the body */
+}
+
+.wrap-image {
+  float: left; /* Floats the image to the left to allow text wrapping around it */
+  margin: 0 15px 15px 0; /* Adds spacing around the image */
+  max-width: 100%; /* Ensures the image scales down on smaller screens */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.large-padding {
+  padding-top: 50px; /* Adds extra padding at the top */
+  padding-bottom: 50px; /* Adds extra padding at the bottom */
+}
+
+.section-spacing {
+  margin-bottom: 500px; /* Adds a large margin at the bottom to create space between sections */
+}
+
+
+/* Flexbox Layout */
+.app-container {
+  display: flex; /* Enables flexbox layout for the container */
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky; /* Keeps the sidebar fixed at the top as you scroll */
+  top: 0; /* Positions the sidebar at the top of its container */
+  width: 250px; /* Sets a fixed width for the sidebar */
+  background: #00539B; /* Sets a background color for the sidebar */
+  padding: 20px; /* Adds padding inside the sidebar */
+  height: 100vh; /* Makes the sidebar height equal to the viewport height */
+  overflow-y: auto; /* Allows scrolling within the sidebar if content exceeds height */
+}
+
+.sidebar-menu {
+  list-style-type: none; /* Removes default list styling for the menu */
+  padding: 0; /* Removes default padding for the menu */
+}
+
+.sidebar-item {
+  margin-bottom: 10px; /* Adds spacing between menu items */
+}
+
+/* Main Content Styling */
+.content {
+  flex: 1; /* Allows the content area to take up remaining space in the flex container */
+  padding: 20px; /* Adds padding inside the content area */
+  overflow: auto; /* Enables scrolling if content overflows */
+}
+
+/* Blog Thumbnails */
+.blog-thumbnails {
+  display: flex; /* Enables flexbox layout for blog thumbnails */
+  flex-wrap: wrap; /* Allows thumbnails to wrap to the next line */
+  gap: 20px; /* Adds spacing between thumbnails */
+}
+
+.blog-thumbnail {
+  width: 300px; /* Sets a fixed width for each blog thumbnail */
+  padding: 20px; /* Adds padding inside each thumbnail */
+  background: #f9f9f9; /* Sets a light background color for the thumbnails */
+  border: 1px solid #ddd; /* Adds a light border around each thumbnail */
+  border-radius: 5px; /* Rounds the corners of the thumbnail */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+}
+
+.blog-thumbnail h2 {
+  font-size: 1.5rem; /* Sets the font size for blog thumbnail titles */
+  margin-bottom: 10px; /* Adds spacing below the title */
+}
+
+.blog-thumbnail p {
+  margin: 10px 0; /* Adds vertical spacing for paragraphs */
+}
+
+.button {
+  display: inline-block; /* Makes the button an inline-block element for proper spacing */
+  padding: 10px 20px; /* Adds padding inside the button */
+  text-decoration: none; /* Removes underline from the link */
+  color: #00539B; /* Sets text color for the button */
+  background-color: #ffffff; /* Sets background color for the button */
+  border-radius: 5px; /* Rounds the corners of the button */
+  transition: background-color 0.3s ease; /* Adds a smooth transition effect for background color change */
+}
+
+.button:hover {
+  color: #ffffff; /* Changes text color on hover */
+  background-color: #00539B; /* Changes background color on hover */
+}
+
+/* Card CSS */
+.profile-cards-container,
+.gallery {
+  display: flex; /* Enables flexbox layout for the card containers */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Adds spacing between cards */
+}
+
+.profile-card {
+  width: 300px; /* Sets a fixed width for each profile card */
+  flex: 1 1 300px; /* Allows cards to grow and shrink but maintain a minimum width */
+  border: 1px solid #ddd; /* Adds a light border around each card */
+  padding: 16px; /* Adds padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+  text-align: center; /* Centers the text inside the card */
+}
+
+.profile-card img {
+  border-radius: 50%; /* Rounds the profile image to a circle */
+  width: 100px; /* Sets a fixed width for the profile image */
+  height: 100px; /* Sets a fixed height for the profile image */
+  object-fit: cover; /* Ensures the image covers the entire circle */
+  margin-bottom: 16px; /* Adds spacing below the image */
+}
+
+.profile-card .profile-title {
+  font-size: 1.2em; /* Sets font size for the profile title */
+  font-weight: bold; /* Makes the profile title bold */
+  margin-bottom: 8px; /* Adds spacing below the title */
+}
+
+.profile-card .profile-job-title {
+  font-size: 1em; /* Sets font size for the job title */
+  color: #777; /* Sets a lighter color for the job title */
+  margin-bottom: 16px; /* Adds spacing below the job title */
+}
+
+.profile-card .profile-description {
+  font-size: 0.9em; /* Sets font size for the profile description */
+  color: #555; /* Sets a medium color for the description */
+}
+
+/* Blog Post */
+.blog-post {
+  border: 1px solid #ddd; /* Adds a light border around each blog post */
+  margin: 20px; /* Adds spacing around the blog post */
+  padding: 20px; /* Adds padding inside the blog post */
+  border-radius: 8px; /* Rounds the corners of the blog post */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+}
+
+.author, .date {
+  font-size: 0.9em; /* Sets font size for the author and date */
+  color: #777; /* Sets a lighter color for the author and date */
+}
+
+.home-page {
+  height: 100vh; /* Sets the height to full viewport height */
+  display: flex; /* Enables flexbox layout for the home page */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Centers text inside the container */
+  background-color: #ffffff; /* Sets background color for the home page */
+  color: #00539B; /* Sets text color for the home page */
+}
+
+.home-content {
+  max-width: 800px; /* Sets a maximum width for the home page content */
+}
+
+.home-content h1 {
+  font-size: 3rem; /* Sets a large font size for the main heading */
+  margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+.home-content p {
+  font-size: 1.2rem; /* Sets font size for paragraphs */
+  margin-bottom: 30px; /* Adds spacing below paragraphs */
+}
+
+.home-content .button {
+  display: inline-block; /* Makes the button an inline-block element for proper spacing */
+  padding: 15px 30px; /* Adds padding inside the button */
+  background-color: #ffffff; /* Sets background color for the button */
+  color: #00539B; /* Sets text color for the button */
+  text-decoration: none; /* Removes underline from the link */
+  font-size: 1.2rem; /* Sets font size for the button text */
+  border-radius: 5px; /* Rounds the corners of the button */
+  transition: background-color 0.3s ease; /* Adds a smooth transition effect for background color change */
+}
+
+.home-content .button:hover {
+  background-color: #00539B; /* Changes background color on hover */
+  color: #ffffff; /* Changes text color on hover */
+}
